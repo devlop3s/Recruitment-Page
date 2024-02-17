@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --primary-font: "Inter", sans-serif;
+    --primary-color-font: #101828;
+    --secondary-color-font: #667085;
+    --color-red-dark: #8E2424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+}
+
+/* logo e icon */
+
+.btn-logo, .art-logo {
+    font-family: var(--primary-font);
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3A404E;
+}
+
+.art-logo {
+    margin-right: 0.5rem;
+}
+
+.btn-logo {
+    margin-left: 8rem;
+    margin-right: 22rem;
+}
+
+/* barra de navegação */
+
+.navbar {
+    display: flex;
+    gap: 60px;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 28rem;
+}
+
+.navbar > li {
+    cursor: pointer;
+    color: var(--secondary-color-font);
+}
+
+.navbar > li:hover {
+    font-size: 1.05rem;
+    color: #101828;
+}
+
+/* botões */
+
+.btn-entrar {
+   width: 7rem;
+   height: 2.80rem;
+   font-family: var(--primary-font);
+   color: var(--secondary-color-font);
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   vertical-align: middle;
+   align-items: center;
+}
+
+.btn-cadastrar {
+    background: var(--color-red-dark);
+    border-radius: 8px;
+    width: 7rem;
+    height: 2.80rem;
+    font-family: var(--primary-font);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+/* cabeçalho */
+
+.cabecalho {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-subheading {
+    color: var(--color-red-dark);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.content-heading {
+    color: var(--primary-color-font);
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+
+.content-aboutus {
+    color: var(--secondary-color-font);
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    width: 48%;
+}
