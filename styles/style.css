@@ -76,6 +76,15 @@ header {
    justify-content: center;
    vertical-align: middle;
    align-items: center;
+   transition: background 0.6s, border 0.2s;
+   border-radius: 8px;
+   margin-right: 2px;
+}
+
+.btn-entrar:hover {
+    border-bottom: 2px #8f8f8f solid;
+    color: #101828;
+    background: rgb(219, 219, 219);
 }
 
 .btn-cadastrar {
@@ -89,6 +98,14 @@ header {
     justify-content: center;
     vertical-align: middle;
     align-items: center;
+}
+
+.btn-cadastrar:hover {
+    background-color: #7a2020;
+}
+
+.btn-cadastrar:active {
+    background-color: #af4242;
 }
 
 /* cabeçalho */
@@ -139,6 +156,12 @@ header {
     font-family: var(--primary-font);
 }
 
+.metricas-container >div {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;;
+    padding: 4px;
+    border-radius: 5px;
+}
+
 .metricas-container > div > h1 {
     color: var(--color-red-dark);
     font-size: 60px;
@@ -158,3 +181,4 @@ header {
     font-size: 16px;
     font-weight: 400;
 }
+
