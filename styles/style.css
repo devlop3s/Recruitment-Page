@@ -27,10 +27,12 @@ header {
 
 .btn-logo, .art-logo {
     font-family: var(--primary-font);
-    vertical-align: middle;
     font-size: 18px;
     font-weight: 500;
     color: #3A404E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .art-logo {
@@ -76,7 +78,7 @@ header {
    justify-content: center;
    vertical-align: middle;
    align-items: center;
-   transition: background 0.6s, border 0.2s;
+   transition: background 0.2s, border 0.2s;
    border-radius: 8px;
    margin-right: 2px;
 }
@@ -149,7 +151,7 @@ header {
     grid-template-rows: 192px;
     justify-content: center;
     gap: 45px;
-    margin-bottom: 10vh;
+    margin-bottom: 25vh;
 }
 
 .metricas-container > div {
@@ -179,3 +181,45 @@ header {
     font-weight: 400;
 }
 
+/* seção vagas abertas */
+.talentos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.talentos-container > h4 {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    background-color: rgba(142, 36, 36, 5%);
+    color: var(--color-red-dark);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 125px;
+}
+
+.talentos-container > h1 {
+    font-family: var(--primary-font);
+    color: var(--primary-color-font);
+    font-size: 36px;
+    font-style: semi-bold;
+    margin-bottom: 20px;
+}
+
+.talentos-container > p {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--secondary-color-font);
+    margin-bottom: 64px;
+}
+
+.talentos-container > img {
+    width: 80vw;
+    margin-bottom: 64px;
+}
