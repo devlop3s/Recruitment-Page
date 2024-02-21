@@ -223,3 +223,44 @@ header {
     width: 80vw;
     margin-bottom: 64px;
 }
+
+/* cards vagas */
+.grid-gap {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 96px;
+}
+
+.categoria-vaga {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 64px;
+    width: 50%;
+}
+
+.vaga {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    margin: 0 auto;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    width: 50%;
+    padding: 24px;
+    display: grid;
+    gap: 32px;
+}
+
+.titulo-vaga {
+    color: var(--primary-color-font);
+    font-size: 18px;
+}
+
+.informacoes-vaga {
+    font-size: 16px;
+    color: var(--secondary-color-font);
+}
+
+.informacoes-vaga > span {
+    margin-right: 15px;
+}
