@@ -5,6 +5,7 @@
     --primary-color-font: #101828;
     --secondary-color-font: #667085;
     --color-red-dark: #8E2424;
+    --transparent-bg-red: rgba(142, 36, 36, 5%);
 }
 
 * {
@@ -198,7 +199,7 @@ header {
 .talentos-container > h4 {
     font-family: var(--primary-font);
     font-size: 14px;
-    background-color: rgba(142, 36, 36, 5%);
+    background-color: var(--transparent-bg-red);
     color: var(--color-red-dark);
     border-radius: 16px;
     margin-bottom: 16px;
@@ -268,4 +269,48 @@ header {
 
 .informacoes-vaga > span {
     margin-right: 15px;
+}
+
+/* seção reviews */
+.reviews {
+    background-color: var(--transparent-bg-red);
+    width: 80%;
+    border-radius: 16px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 64px;
+    margin-bottom: 96px;
+}
+
+.reviews > h2 {
+    color: var(--color-red-dark);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.reviews > p {
+    color: var(--primary-color-font);
+    font-family: var(--primary-font);
+    font-size: 36px;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.review-profile > img {
+    width: 56px;
+    margin-bottom: 16px;
+}
+
+.review-profile > h1 {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.review-profile > h2 {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    color: var(--secondary-color-font);
+    font-weight: 400;
 }
