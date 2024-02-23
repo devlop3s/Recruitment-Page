@@ -6,6 +6,9 @@
     --secondary-color-font: #667085;
     --color-red-dark: #8E2424;
     --transparent-bg-red: rgba(142, 36, 36, 5%);
+    --bg-footer-color: #F9FAFB;
+    --border-gray-input: #D0D5DD;
+    --gray-weaker: #98A2B3;
 }
 
 * {
@@ -312,5 +315,63 @@ header {
     font-family: var(--primary-font);
     font-size: 14px;
     color: var(--secondary-color-font);
+    font-weight: 400;
+}
+
+/* footer */
+footer {
+    background-color: var(--bg-footer-color);
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > h1 {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer > h2 {
+    font-family: var(--primary-font);
+    color: var(--secondary-color-font);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.email-field > input {
+    width: 360px;
+    height: 48px;
+    border: 1px solid var(--border-gray-input);
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    padding-left: 16px;
+    margin-bottom: 32px;
+}
+
+.email-field > input::placeholder {
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+.btn-cadastrar-email {
+    width: 116px;
+    height: 48px;
+    border: 0;
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    color: #fff;
+    background-color: var(--color-red-dark);
+    cursor: pointer;
+}
+
+.copyright {
+    font-family: var(--primary-font);
+    color: var(--gray-weaker);
     font-weight: 400;
 }
